@@ -9,34 +9,34 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Junior Web Developer</div>
-            <div class="navlinks">
-                <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <nav>
+    <div class="logo">Junior Web Developer</div>
+    
+    
+    <i class='bx bx-menu' id="menu-toggle"></i>
+
+    <div class="navlinks" id="navlinks">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+</header>
 
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Kaung Pyae Sone</h1>
             <h3>And I'm a <span class="text"></span></h3>
-            <p>I hold an <b>IT Diploma</b> and specialize in building functional web applications. 
-               Expertise in creating responsive designs and interactive features like 
-               Shopping Carts and Inventory Logic.</p>
+            <p>I am a <b>Junior Web Developer</b> with an IT Diploma,specialized in building functional web applications.I have a strong passion for creating intuitive designs and complex backend systems,including features like Shopping Carts and inventory Management Logic.</p>
             
             <div class="home-sci">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-telegram' ></i></a>
+                <a href="https://www.facebook.com/KaungPyaeSone/" target="blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/kps08012001-design"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="#contact" class="btn">Hire Me</a>
+            <a href="mailto:KPS08012001@gmail.com" class="btn">Hire Me</a>
         </div>
 
         <div class="home-img">
@@ -52,8 +52,8 @@
             <div class="skills-column">
                 <div class="skills-box">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Web Development</h3>
-                    <p>Developing functional web apps with PHP, NodeJS, or Python. Implementing complex logic.</p>
+                    <h3>Backend Development</h3>
+                    <p>Building robust and scalable server-side applications using <b>PHP</b>,<b>Java</b>. Focused on implementing secure business logic and efficient API integrations.</p>
                 </div>
                 <div class="skills-box">
                     <i class='bx bxl-html5'></i>
@@ -63,7 +63,12 @@
                 <div class="skills-box">
                     <i class='bx bx-data'></i>
                     <h3>Database Management</h3>
-                    <p>Basic understanding of JSON, AJAX, and managing software development lifecycles.</p>
+                    <p>Basic understanding of MySQL, and managing with Database Design,Queries,and Data Normalization using MySQL.</p>
+                </div>
+                <div class="skills-box">
+                   <i class='bx bxl-github'></i>
+                    <h3>Version Control</h3>
+                    <p>Managing project versions and collaborating with team members using Git and GitHub.</p>
                 </div>
             </div>
         </div>
@@ -77,21 +82,25 @@
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Junior Web Developer</h3>
-            <p>I hold an <b>IT Diploma</b> and I am a passionate long-term learner. I have experience in developing 
-               projects like a Virtual Shopping Mall, where I implemented "Add to Cart" and "Stock Limit" functions. 
-               I am dedicated to delivering high-quality technical solutions and collaborating effectively with teams.</p><br>
-            <a href="#" class="btn1">Read More</a>
+            <p>I am a <b>B.Sc.(Zoology) Qualified with a deep-rooted passion for technology,which led me to pursue an IT Diploma and specialize in Web Development.As a Junior Web Developer,I enjoy the challenge of turning complex ideas into functional,user friendly applications.
+                During my learing Journey,I have focused on PHP and Java,along with modern frontend technologies.One of my proudest achievements is developing a Virtual Shopping Mall school project(template one),where I successfully implemented intricate features like dynamic Shopping Carts and 'Stock Limit' Inventory logic.</br></br>This project sharpened my ability to solve real-world problems through clean and efficient code.
+                 I am also dedicated to continuous professional growth,having passed the JLPT N4 for Japanese language proficiency and the ITPEC IT Passport(IP)examination.I am a lifelong learner who is eager to contribute my technical skils and collaborative my technical skills and collaborative mindset to a forward-thinking team. <br>
+
         </div>
     </section>
 
     <section class="projects" id="projects">
-        <h2 class="heading">My <span>School Projects</span></h2>
+        <h2 class="heading"><span>Recent Projects</span></h2>
         <div class="projects-container">
             <div class="project-card">
                 <i class='bx bxs-cart-add'></i>
-                <h3>Virtual Shopping Mall</h3>
-                <p>A web template with dynamic cart and inventory management logic.</p>
+                <h3>Malltiverse</h3>
+                <p>Developed a full-stack virtual mall with dynamic cart features and secure inventory management using PHP.</p>
+                <div class="project-links">
+    <a href="https://github.com/kps08012001-design?tab=repositories" target="_blank" class="btn-source">
+        <i class='bx bxl-github'></i> Source Code
+    </a>
+</div>
             </div>
             <div class="project-card">
                 <i class='bx bx-layout'></i>
@@ -105,17 +114,19 @@
         <h2 class="heading">Contact <span>Me</span></h2>
         <div class="contact-row">
             <form action="savedata.php" method="post">
-                <div class="input-box">
-                    <input type="text" name="full_name" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-                <textarea cols="30" rows="10" name="message" placeholder="Your Message" required></textarea><br>
+               <div class="input-box">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="text" name="company_name" placeholder="Company Name" required>
+             <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required oninput="this.value=this.value.replace(/[^0-9]/g,'');"> 
+            </div>
+                <textarea cols="30" rows="10" name="message" placeholder="Your Message" required></textarea><br><br>
                 <input type="submit" value="Send Message" class="btn">
             </form>
             <div class="contact-info">
                 <p><i class='bx bxs-phone'></i> +9509686139011</p>
                 <p><i class='bx bxs-envelope'></i> KPS08012001@gmail.com</p>
-                <p><i class='bx bxs-map'></i> Yangon, Myanmar</p>
+                <p><i class='bx bxs-map'></i> Yangon(Dawbon),Myanmar</p>
             </div>
         </div>
     </section>
@@ -123,19 +134,31 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".text", {
-            strings: ["Junior Web Developer", "IT Diploma Holder", "Frontend Designer"],
-            typeSpeed: 100,
-            backSpeed: 100,
+            strings: ["Junior Web Developer"],
+            typeSpeed: 200,
+            backSpeed: 200,
             backDelay: 1000,
             loop: true
         });
     </script>
     <footer class="footer">
     <div class="footer-text">
-        <p>Copyright &copy; 2024 by Kaung Pyae Sone | All Rights Reserved.</p>
+        <p>Copyright &copy; 2026 by Kaung Pyae Sone | All Rights Reserved.</p>
     </div>
 
-   
+   <script>const menuToggle = document.querySelector('#menu-toggle');
+const navlinks = document.querySelector('#navlinks');
+
+menuToggle.onclick = () => {
+    navlinks.classList.toggle('active');
+};
+
+
+navlinks.onclick = () => {
+    navlinks.classList.remove('active');
+};</script>
 </footer>
 </body>
+
 </html>
+

@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 
 if ($conn->connect_error) {
-    die("ချိတ်ဆက်မှု မအောင်မြင်ပါ: " . $conn->connect_error);
+    die("Connection Failed: " . $conn->connect_error);
 }
 
 
@@ -20,10 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $full_name = mysqli_real_escape_string($conn, $_POST['full_name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $message = mysqli_real_escape_string($conn, $_POST['message']);
+    $phone = mysqli_real_escape_string($conn, $_POST['phone']);
 
     
-    $sql = "INSERT INTO contact_messages (full_name, email, message) 
-            VALUES ('$full_name', '$email', '$message')";
+    $sql = "INSERT INTO contact_messages (full_name, email, message,phone) 
+            VALUES ('$full_name', '$email', '$message',$phone)";
 
    if ($conn->query($sql) === TRUE) {
     echo "
